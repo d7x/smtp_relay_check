@@ -27,7 +27,7 @@ def sendEmail(IP, Port, rcpt_from, rcpt_to):
 
 	s = socket.socket()
 	s.connect((IP,int(Port)))
-	socket.setdefaulttimeout(3)
+	socket.setdefaulttimeout(20)
 
 	ans = s.recv(1024).decode()
 
@@ -87,8 +87,11 @@ def main():
 		hosts.append(host)
 
 		# get TLD
-		host_tld = get_fld(host, fix_protocol=True)
-		hosts.append(host_tld)
+		try:
+			host_tld = get_fld(host, fix_protocol=True)
+			hosts.append(host_tld)
+		except:
+			pass
 
 		print("\n[+]Port" + " " + str(Port) + " " + "open on the target system\n")
 
@@ -105,8 +108,11 @@ def main():
 		hosts.append(host_helo)
 
 		# get TLD
-		host_tld = get_fld(host_helo, fix_protocol=True)
-		hosts.append(host_tld)
+		try:
+			host_tld = get_fld(host_helo, fix_protocol=True)
+			hosts.append(host_tld)
+		except: 
+			pass
 
 		# convert to set to get unique values
 		hosts = set(hosts)
