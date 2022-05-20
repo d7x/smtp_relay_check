@@ -14,5 +14,5 @@ SMTP Open Relay Check script, written in Python
 - Internal Source Address, External Destination address
 
 # Resources:
-https://www.blackhillsinfosec.com/how-to-test-for-open-mail-relays/
-https://hunter.io/
+https://www.blackhillsinfosec.com/how-to-test-for-open-mail-relays/  
+https://hunter.io/  
