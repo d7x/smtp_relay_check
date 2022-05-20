@@ -2,7 +2,7 @@
 SMTP Open Relay Check script, written in Python
 
 # Usage: 
-python3 smtp_relay_check <target> <port> 
+`python3 smtp_relay_check <target> <port>`
   
 # Test cases: 
 - External Source Address, External Destination Address
