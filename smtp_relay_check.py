@@ -114,7 +114,7 @@ def main():
 		# Ext src -> ext dst
 		sendEmail(IP, Port, ext_email_src, ext_email_dst)
 
-		# Ext src -> int dst, Int src -> Int dst
+		# Ext src -> int dst; Int src -> Int dst; Int src -> ext dst 
 		for h in hosts:
 			rcpt = mails_int[0] + '@' + h
 			int_email_f = int_email_src[0] + '@' + h
