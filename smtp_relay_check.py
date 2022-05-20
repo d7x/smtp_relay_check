@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Note: part of this code was (initially) taken from https://github.com/tango-j/SMTP-Open-Relay-Attack-Test-Tool/blob/master/OpenRelay.py, but it was highly modified 
 
 ''' SMTP Open Relay Check 
@@ -9,7 +11,6 @@ Usage: python smtp_relay_check.py <target> <port>
 
 '''
 
-#!/usr/bin/env python3
 import socket
 import smtplib
 from smtplib import *
